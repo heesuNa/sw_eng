@@ -20,7 +20,7 @@ public class Student implements Serializable
 	public String toString()
 	{
 		String description;
-		description="-학번 : "+id +"\n";
+		description="-학번: "+id +"\n";
 		description+="-이름: "+name+"\n";
 		description+="-학과: "+department+"\n";
 		description+="-핸드폰 번호: "+phoneNumber+"\n";
@@ -45,9 +45,6 @@ public class Student implements Serializable
 	{
 		return phoneNumber;
 	}
-
-
-
 }
 
 
