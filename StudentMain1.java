@@ -10,7 +10,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
-public class StudentMain {
+public class StudentMain1 {
    final static int max = 100;
    static Student[] student = new Student[max];
    static Student[] storedStudent = new Student[max];
@@ -98,11 +98,13 @@ public class StudentMain {
          if (updateIndex != total) {
             for (int i = updateIndex; i < total; i++) {
                storedStudent[i] = storedStudent[i + 1];
-               System.out.println(storedStudent[i]);
             }
          }
          storedStudentLastNum--;
-         count--;
+         if(count!=0){
+        	 count--;
+         }
+         System.out.println("count : " + count);
          System.out.println("complete");
       } else
          System.out.println("There is no data");
@@ -166,10 +168,7 @@ public class StudentMain {
          }
          fis.close();
          ois.close();
-      } else {
-         for (int i = 0; i < count; i++) {
-            student[i] = storedStudent[i];
-         }
       }
+      
    }
 }
