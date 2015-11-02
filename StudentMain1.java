@@ -104,7 +104,6 @@ public class StudentMain1 {
          if(count!=0){
         	 count--;
          }
-         System.out.println("count : " + count);
          System.out.println("complete");
       } else
          System.out.println("There is no data");
