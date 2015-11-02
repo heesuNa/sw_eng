@@ -29,11 +29,11 @@ public class StudentMain1 {
       }
       while (out != 1) {
          System.out.println("----------------------------");
-         System.out.println("1. add");
-         System.out.println("2. update");
-         System.out.println("3. delete");
-         System.out.println("4. view");
-         System.out.println("5. finish");
+         System.out.println("1.add");
+         System.out.println("2.update");
+         System.out.println("3.delete");
+         System.out.println("4.view");
+         System.out.println("5.finish");
          System.out.println("----------------------------");
          number = scan.nextInt();
          if (number == 1) {
